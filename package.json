@@ -27,6 +27,7 @@
     "tape": "^4.6.3"
   },
   "directories": {
-    "test": "test"
+    "test": "test",
+    "lib": "lib"
   }
 }
