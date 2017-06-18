@@ -10,15 +10,10 @@ tape('error exists', function(t) {
   try {
     throw new Error('An Error happened');
   } catch (e) {
-
     log.error(e.message);
-
     let errObj = log.error(e.message);
-
     t.ok(errObj, errObj.output.match(/error/));
-
     t.end();
-
   }
 
 });

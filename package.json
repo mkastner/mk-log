@@ -1,11 +1,12 @@
 {
   "name": "mk-log",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "tracer based logger",
   "main": "index.js",
   "scripts": {
     "test": "NODE_ENV=test node test/*-test.js",
-    "github": "git push -u origin master"
+    "github": "git push -u origin master",
+    "github:tags": "git push --tags -u origin master"
   },
   "repository": {
     "type": "git",
