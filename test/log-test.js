@@ -15,7 +15,7 @@ tape('error exists', function(t) {
 
     let errObj = log.error(e.message);
 
-    t.ok(errObj, errObj.output.match(/error/));
+    t.ok(errObj, errObj.output.match(/error/), 'an error message');
 
     t.end();
 
