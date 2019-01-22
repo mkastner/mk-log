@@ -29,6 +29,7 @@
     "lib": "lib"
   },
   "dependencies": {
+    "colors": "^1.3.3",
     "tracer": "^0.8.9"
   }
 }
