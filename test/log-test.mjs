@@ -1,5 +1,5 @@
 import tape from 'tape';
-import log from '../lib/index.js';
+import log from '../lib/index.mjs';
 
 tape('error exists', function(t) {
 

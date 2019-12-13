@@ -2,14 +2,14 @@
   "name": "mk-log",
   "version": "0.0.8",
   "description": "tracer based logger",
-  "type": "module",
-  "main": "./lib/mk-log.js",
+  "main": "./lib/mk-log.mjs",
   "engines": {
     "node": ">=13.2.0"
   },
   "scripts": {
-    "test": "NODE_ENV=test node test/*-test.js",
-    "github": "git push -u origin esm"
+    "test": "NODE_ENV=test node test/*-test.mjs",
+    "github:master": "git push -u origin master",
+    "github:esm": "git push -u origin esm"
   },
   "repository": {
     "type": "git",
