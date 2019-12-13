@@ -1,4 +1,3 @@
-/* jslint node: true, strict:implied */
-module.exports = {
-	logLevel: 'info'
+export default {
+  logLevel: 'info'
 };

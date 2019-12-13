@@ -1,7 +1,5 @@
-/* jslint node: true, esversion: 6, strict: implied */
-
-var tape = require('tape'),
-  log = require('../index');
+import tape from 'tape';
+import log from '../lib/index.js';
 
 tape('error exists', function(t) {
 

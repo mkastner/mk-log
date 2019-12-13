@@ -2,10 +2,14 @@
   "name": "mk-log",
   "version": "0.0.8",
   "description": "tracer based logger",
-  "main": "index.js",
+  "type": "module",
+  "main": "./lib/mk-log.js",
+  "engines": {
+    "node": ">=13.2.0"
+  },
   "scripts": {
     "test": "NODE_ENV=test node test/*-test.js",
-    "github": "git push -u origin master"
+    "github": "git push -u origin esm"
   },
   "repository": {
     "type": "git",
@@ -22,6 +26,10 @@
   },
   "homepage": "https://github.com/mkastner/mk-log#readme",
   "devDependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.7.4",
+    "@babel/preset-env": "^7.7.6",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.7.2",
     "tape": "^4.6.3"
   },
   "directories": {
