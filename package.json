@@ -1,6 +1,6 @@
 {
   "name": "mk-log",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "tracer based logger",
   "main": "index.js",
   "scripts": {
