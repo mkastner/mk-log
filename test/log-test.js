@@ -1,24 +1,27 @@
-/* jslint node: true, esversion: 6, strict: implied */
+const tape = require('tape');
+const log = require('../index');
 
-var tape = require('tape'),
-  log = require('../index');
-
-tape('error exists', function(t) {
-
-  t.plan(1);
-
+tape('error exists', (t) => {
   try {
     throw new Error('An Error happened');
   } catch (e) {
 
-    log.error(e.message);
-
-    let errObj = log.error(e.message);
-
+    const errObj = log.error(e.message);
     t.ok(errObj, errObj.output.match(/error/), 'an error message');
-
     t.end();
-
   }
+});
 
+tape('show info message', (t) => {
+  try {
+    const logText =  'I am an info text';
+    const logResult = log.info(logText);
+
+    t.equal(logResult.message, logText);
+
+  } catch (e) {
+    console.log(e, e);
+  } finally {
+    t.end();
+  }
 });
