@@ -1,6 +1,6 @@
 {
   "name": "mk-log",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "tracer based logger",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,7 @@
     "lib": "lib"
   },
   "dependencies": {
-    "colors": "^1.3.3",
-    "tracer": "^1.0.1"
+    "colors": "^1.4.0",
+    "tracer": "^1.1.6"
   }
 }
